@@ -1,36 +1,33 @@
-## TESTE PRÁTICO PROGRAMAÇÃO
+# TestePratico: Java practical test
 
-Projeto Java desenvolvido conforme o enunciado do teste prático.
+Console program written for a Java technical test: manage a list of employees and produce a series of reports.
 
-## Arquivos
+## What the program does
 
-- Pessoa.java
-- Funcionario.java
-- Principal.java
+1. Registers the employees from the given table
+2. Removes one employee from the list
+3. Prints all employees with formatted dates (`dd/MM/yyyy`) and salaries
+4. Applies a 10% raise to every salary
+5. Groups employees by role
+6. Lists who has a birthday in October and December
+7. Finds the oldest employee
+8. Sorts employees by name
+9. Sums all salaries
+10. Calculates how many minimum wages each employee earns
 
-## O que o programa faz
+## Concepts used
 
-- Cadastra os funcionarios da tabela.
-- Remove o funcionario João.
-- Mostra todos os funcionarios formatando data e salario.
-- Aplica 10% de aumento.
-- Agrupa os funcionarios por funcao.
-- Mostra quem faz aniversario nos meses 10 e 12.
-- Mostra o funcionario com maior idade.
-- Ordena os funcionarios por nome.
-- Soma os salarios.
-- Calcula quantos salarios minimos cada funcionario ganha.
+- Inheritance (`Funcionario` extends `Pessoa`)
+- `BigDecimal` for money, with explicit rounding
+- `LocalDate`, `Period` and `DateTimeFormatter` for dates
+- Collections: lists, maps for grouping, sorting with comparators
 
-## Dados usados
+## Running
 
-- Maria - 18/10/2000 - 2009.44 - Operador
-- João - 12/05/1990 - 2284.38 - Operador
-- Caio - 02/05/1961 - 9836.14 - Coordenador
-- Miguel - 14/10/1988 - 19119.88 - Diretor
-- Alice - 05/01/1995 - 2234.68 - Recepcionista
-- Heitor - 19/11/1999 - 1582.72 - Operador
-- Arthur - 31/03/1993 - 4071.84 - Contador
-- Laura - 08/07/1994 - 3017.45 - Gerente
-- Heloisa - 24/05/2003 - 1606.85 - Eletricista
-- Helena - 02/09/1996 - 2799.93 - Gerente
+```bash
+cd src
+javac *.java
+java Principal
+```
 
+Requires Java 8 or newer. Output is in Portuguese.
